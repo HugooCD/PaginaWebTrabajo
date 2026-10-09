@@ -5,18 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Conoce algunos tipos y modelos de motocicletas Kawasaki.">
   <title>Kawasaki</title>
+  <style>
+    .galeria-motos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: 24px;
+    }
+
+    .ficha-moto {
+      margin: 0;
+    }
+
+    .ficha-moto img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .datos-moto {
+      display: block;
+      padding-top: 8px;
+    }
+
+    .datos-moto h4 {
+      margin: 0 0 4px;
+      color: #105e00;
+      font-size: 1rem;
+    }
+
+    .datos-moto p {
+      margin: 2px 0;
+      color: #444;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body style="margin: 0; background-color: #f7f9f6; color: #222; font-family: Arial, sans-serif; line-height: 1.6;">
-  <header style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; background-color: #edf4e9;">
-    <img src="Fotos/Kawasaki2.webp" alt="Logo de Kawasaki" title="Kawasaki" style="display: block; width: 550px; max-width: 100%; height: auto;">
+  <header style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; background-color: #272626;">
+    <img src="Fotos/Logo%20kawasaki.png" alt="Logo de Kawasaki" title="Kawasaki" style="display: block; width: 550px; max-width: 100%; height: auto;">
     <nav aria-label="Enlaces a las secciones">
       <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; list-style: none; padding: 0;">
-        <li><a href="#marca" style="color: #105e00; font-weight: bold">Kawasaki</a></li>
-        <li><a href="#otros-productos" style="color: #105e00; font-weight: bold">Otros productos</a></li>
-        <li><a href="#tipos-de-motos" style="color: #105e00; font-weight: bold">Tipos de motos</a></li>
-        <li><a href="#naked" style="color: #105e00; font-weight: bold">Naked</a></li>
-        <li><a href="#deportivas" style="color: #105e00; font-weight: bold">Deportivas</a></li>
-        <li><a href="#trail" style="color: #105e00; font-weight: bold">Trail</a></li>
+        <li><a href="#marca" style="color: #60B52A; font-weight: bold">Kawasaki</a></li>
+        <li><a href="#otros-productos" style="color: #60B52A; font-weight: bold">Otros productos</a></li>
+        <li><a href="#tipos-de-motos" style="color: #60B52A; font-weight: bold">Tipos de motos</a></li>
+        <li><a href="#naked" style="color: #60B52A; font-weight: bold">Naked</a></li>
+        <li><a href="#deportivas" style="color: #60B52A; font-weight: bold">Deportivas</a></li>
+        <li><a href="#trail" style="color: #60B52A; font-weight: bold">Trail</a></li>
       </ul>
     </nav>
   </header>
@@ -41,10 +76,20 @@
       <div style="margin-left: 30px;">
         <p>Las motos naked de Kawasaki combinan estilo y rendimiento, ideales para una conducción urbana y placentera.</p>
         <p>Algunos ejemplos destacados son la Kawasaki Z900RS, la Z650 y la Z900, que ofrecen un equilibrio entre potencia y maniobrabilidad.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-          <img src="Fotos/Z900RSb.webp" alt="Kawasaki Z900RS" title="Kawasaki Z900RS" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/Z650.webp" alt="Kawasaki Z650" title="Kawasaki Z650" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/Z900.jpg" alt="Kawasaki Z900" title="Kawasaki Z900" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
+        <p>Datos orientativos: pueden variar según el año, la versión y el mercado. Precio aproximado en España.</p>
+        <div class="galeria-motos">
+          <figure class="ficha-moto">
+            <img src="Fotos/Z900RSb.webp" alt="Kawasaki Z900RS" title="Kawasaki Z900RS" aria-describedby="datos-z900rs">
+            <figcaption class="datos-moto" id="datos-z900rs"><h4>Kawasaki Z900RS</h4><p>Potencia: aprox. 111 CV</p><p>Velocidad máxima: aprox. 225 km/h</p><p>Peso: aprox. 215 kg</p><p>Precio: aprox. 14.500 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/Z650.webp" alt="Kawasaki Z650" title="Kawasaki Z650" aria-describedby="datos-z650">
+            <figcaption class="datos-moto" id="datos-z650"><h4>Kawasaki Z650</h4><p>Potencia: aprox. 68 CV</p><p>Velocidad máxima: aprox. 191 km/h</p><p>Peso: aprox. 188 kg</p><p>Precio: aprox. 7.600 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/Z900.jpg" alt="Kawasaki Z900" title="Kawasaki Z900" aria-describedby="datos-z900">
+            <figcaption class="datos-moto" id="datos-z900"><h4>Kawasaki Z900</h4><p>Potencia: aprox. 124 CV</p><p>Velocidad máxima: aprox. 240 km/h</p><p>Peso: aprox. 213 kg</p><p>Precio: aprox. 10.300 €</p></figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -54,10 +99,19 @@
       <div style="margin-left: 30px;">
         <p>Las motos deportivas de Kawasaki destacan por su velocidad y agilidad, perfectas para los amantes de la adrenalina y la competición.</p>
         <p>Entre los modelos más populares y potentes se encuentran la Kawasaki Ninja ZX-10R, la Ninja ZX-6R y la Ninja H2, que ofrecen un rendimiento excepcional en pista y carretera.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-          <img src="Fotos/ZX10R.jpg" alt="Kawasaki Ninja ZX-10R" title="Kawasaki Ninja ZX-10R" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/ZX6R.jpg" alt="Kawasaki Ninja ZX-6R" title="Kawasaki Ninja ZX-6R" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/H2.jpg" alt="Kawasaki Ninja H2" title="Kawasaki Ninja H2" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
+        <div class="galeria-motos">
+          <figure class="ficha-moto">
+            <img src="Fotos/zx10r.jpg" alt="Kawasaki Ninja ZX-10R" title="Kawasaki Ninja ZX-10R" aria-describedby="datos-zx10r">
+            <figcaption class="datos-moto" id="datos-zx10r"><h4>Kawasaki Ninja ZX-10R</h4><p>Potencia: aprox. 203 CV</p><p>Velocidad máxima: aprox. 299 km/h</p><p>Peso: aprox. 209 kg</p><p>Precio: aprox. 20.000 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/ZX6R.jpg" alt="Kawasaki Ninja ZX-6R" title="Kawasaki Ninja ZX-6R" aria-describedby="datos-zx6r">
+            <figcaption class="datos-moto" id="datos-zx6r"><h4>Kawasaki Ninja ZX-6R</h4><p>Potencia: aprox. 124 CV</p><p>Velocidad máxima: aprox. 257 km/h</p><p>Peso: aprox. 198 kg</p><p>Precio: aprox. 13.500 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/H2.jpg" alt="Kawasaki Ninja H2" title="Kawasaki Ninja H2" aria-describedby="datos-h2">
+            <figcaption class="datos-moto" id="datos-h2"><h4>Kawasaki Ninja H2</h4><p>Potencia: aprox. 231 CV</p><p>Velocidad máxima: aprox. 299 km/h</p><p>Peso: aprox. 238 kg</p><p>Precio: aprox. 34.000 €</p></figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -67,10 +121,19 @@
       <div style="margin-left: 30px;">
         <p>Las motos trail de Kawasaki son versátiles, combinando características de carretera y campo.</p>
         <p>Algunos ejemplos son la Kawasaki KLE500, la KLE500 SE y la Versys 1000.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-          <img src="Fotos/KLE500.jpg" alt="Kawasaki KLE500" title="Kawasaki KLE500" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/KLE500SE.jpeg" alt="Kawasaki KLE500 SE" title="Kawasaki KLE500 SE" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
-          <img src="Fotos/Versys1000.jpg" alt="Kawasaki Versys 1000" title="Kawasaki Versys 1000" style="width: 300px; max-width: 100%; height: auto; border-radius: 6px;">
+        <div class="galeria-motos">
+          <figure class="ficha-moto">
+            <img src="Fotos/KLE500.jpg" alt="Kawasaki KLE500" title="Kawasaki KLE500" aria-describedby="datos-kle500">
+            <figcaption class="datos-moto" id="datos-kle500"><h4>Kawasaki KLE500</h4><p>Potencia: aprox. 45 CV</p><p>Velocidad máxima: aprox. 170 km/h</p><p>Peso: aprox. 194 kg</p><p>Precio: aprox. 7.000 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/KLE500SE.jpeg" alt="Kawasaki KLE500 SE" title="Kawasaki KLE500 SE" aria-describedby="datos-kle500se">
+            <figcaption class="datos-moto" id="datos-kle500se"><h4>Kawasaki KLE500 SE</h4><p>Potencia: aprox. 45 CV</p><p>Velocidad máxima: aprox. 170 km/h</p><p>Peso: aprox. 199 kg</p><p>Precio: aprox. 7.800 €</p></figcaption>
+          </figure>
+          <figure class="ficha-moto">
+            <img src="Fotos/Versys1000.jpg" alt="Kawasaki Versys 1000" title="Kawasaki Versys 1000" aria-describedby="datos-versys1000">
+            <figcaption class="datos-moto" id="datos-versys1000"><h4>Kawasaki Versys 1000</h4><p>Potencia: aprox. 120 CV</p><p>Velocidad máxima: aprox. 220 km/h</p><p>Peso: aprox. 257 kg</p><p>Precio: aprox. 16.500 €</p></figcaption>
+          </figure>
         </div>
       </div>
     </section>
